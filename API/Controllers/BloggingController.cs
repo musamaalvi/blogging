@@ -7,6 +7,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DAL;
+using API.Services;
 
 namespace API.Controllers
 {
@@ -16,12 +17,14 @@ namespace API.Controllers
     {
         private readonly IMediator _bus;
         private readonly ILogger<BloggingController> _logger;
-        
+        private readonly AboutUsService _aboutus;
 
-        public BloggingController(ILogger<BloggingController> logger, IMediator bus )
+
+        public BloggingController(ILogger<BloggingController> logger, IMediator bus, AboutUsService ser)
         {
             _logger = logger;
             _bus = bus;
+            _aboutus = ser;
         }
 
 
