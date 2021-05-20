@@ -4,6 +4,7 @@ import './App.css';
 import useAppState from './appState';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './routes/login/login';
+import About from './routes/about/about';
 
 function App() {
   // const {Counter, setCounter} = useAppState();
@@ -24,6 +25,7 @@ function App() {
 
 <Route path="/testing" component={testing}/>
 <Route path="/login" component={Login}/>
+<Route path="/about" component={About}/>
   
 </Router>
 
