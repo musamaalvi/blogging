@@ -14,9 +14,12 @@ namespace API.Models
         public string Id { get; set; }
 
         [BsonElement("name")]
-        public string about { get; set; }
+        public string nam { get; set; }
+        public string title { get; set; }
+        public string email { get; set; }
+        public string description { get; set; }
 
 
-  
+
     }
 }

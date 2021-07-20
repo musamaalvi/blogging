@@ -5,22 +5,24 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using DAL;
-
-
+using API.Services;
+using Microsoft.AspNetCore.Mvc;
+using API.Models;
 
 namespace API.Query.Handlers
 {
-    public class FetchItemQueryHandler : IRequestHandler<FetchItemQuery, String>
+    public class FetchItemQueryHandler : IRequestHandler<FetchItemQuery, List<AboutUs>>
     {
-        
-        public FetchItemQueryHandler()
+        private readonly AboutUsService _aboutus;
+
+        public FetchItemQueryHandler(AboutUsService aboutus)
         {
-          
+            _aboutus = aboutus;
         }
-        public async Task<string> Handle(FetchItemQuery request, CancellationToken cancellationToken)
+        public async Task<List<AboutUs>> Handle(FetchItemQuery request, CancellationToken cancellationToken)
         {
-            String ss = "dadas";
-            return ss;
+            return _aboutus.Get();
+            
         }
     }
 }
