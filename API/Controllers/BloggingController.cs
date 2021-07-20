@@ -33,8 +33,10 @@ namespace API.Controllers
         [HttpGet("items")]
         public async Task<IActionResult> Get()
         {
-            FetchItemQuery query = new FetchItemQuery();
-            var result = await _bus.Send(query);
+            //FetchItemQuery query = new FetchItemQuery();
+            //var result = await _bus.Send(query);
+
+            var result = _aboutus.Get();
             return Ok(result);
         }
     }

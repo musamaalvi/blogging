@@ -13,10 +13,9 @@ namespace API.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
 
-        [BsonElement("aboutus")]
+        [BsonElement("name")]
         public string about { get; set; }
 
-        public DateTime date { get; set; }
 
   
     }

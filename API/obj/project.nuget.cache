@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MICIiSseLnHBgBbLzEmPuYGR1qYZ+FxoC/PkkCyAViJOcVg+BsBgjGfI/F2646gH+Uo8/rMyio6z28U1x/15Sg==",
+  "dgSpecHash": "arnBO0HiRDO3AW0a9gDiYHOEnRed/YQBs23UOcM3oAkCP7JS6xFILFX0blJp9FP81Wcvl/csBP0DQIzDcORbEA==",
   "success": true,
-  "projectFilePath": "E:\\SelfLearning\\blogging\\API\\API.csproj",
+  "projectFilePath": "D:\\Personal\\Projects\\blogging\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mualvi\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\mualvi\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
@@ -16,7 +16,8 @@
     "C:\\Users\\mualvi\\.nuget\\packages\\sharpcompress\\0.23.0\\sharpcompress.0.23.0.nupkg.sha512",
     "C:\\Users\\mualvi\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\mualvi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
-    "C:\\Users\\mualvi\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
+    "C:\\Users\\mualvi\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
+    "C:\\Users\\mualvi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.14\\microsoft.netcore.app.host.win-x64.3.1.14.nupkg.sha512"
   ],
   "logs": []
 }
