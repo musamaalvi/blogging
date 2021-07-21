@@ -1,10 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './about.css';
 import image2 from '../../assets/images/team2.jpg'
 import image3 from '../../assets/images/team3.jpg'
 import image1 from '../../assets/images/team1.jpg'
 const About = () => {
 
+    useEffect(() => {
+        console.log("process env ",process.env)
+        fetch(process.env.REACT_APP_API_URL + 'blogging/items')
+        .then(res => res.json())
+        .then((res: any) => {
+            console.log("api respose", res)
+        })
+    }, [])
 
     return (
         <React.Fragment>

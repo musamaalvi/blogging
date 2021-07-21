@@ -35,6 +35,7 @@ namespace API
             services.AddSingleton<IDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
 
+            services.AddCors();
             services.AddSingleton<AboutUsService>();
             services.AddControllers();
             services.AddMediatR(typeof(Startup));
@@ -49,6 +50,11 @@ namespace API
             }
 
             app.UseHttpsRedirection();
+            app.UseCors(x => x
+               .AllowAnyMethod()
+               .AllowAnyHeader()
+               .SetIsOriginAllowed(origin => true) // allow any origin
+               .AllowCredentials()); // allow credentials
 
             app.UseRouting();
 
