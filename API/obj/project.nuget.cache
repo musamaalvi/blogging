@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "arnBO0HiRDO3AW0a9gDiYHOEnRed/YQBs23UOcM3oAkCP7JS6xFILFX0blJp9FP81Wcvl/csBP0DQIzDcORbEA==",
+  "dgSpecHash": "jNOBKITbjwL/Gw2pza77HElw4Uee8ZiIZbhe4VSQbQ0SpdqX7vym9VzEPNbX+e39QNyPKfjYYlClHQVJV+utFw==",
   "success": true,
   "projectFilePath": "D:\\Personal\\Projects\\blogging\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,10 @@
     "C:\\Users\\mualvi\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\mualvi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\mualvi\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
-    "C:\\Users\\mualvi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.14\\microsoft.netcore.app.host.win-x64.3.1.14.nupkg.sha512"
+    "C:\\Users\\mualvi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\mualvi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\mualvi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\mualvi\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512"
   ],
   "logs": []
 }
