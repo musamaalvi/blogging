@@ -21,7 +21,7 @@ function App() {
   // );
   return(
 <Router>
-  <h2>thi is home</h2>
+ 
 
 <Route path="/testing" component={testing}/>
 <Route path="/login" component={Login}/>

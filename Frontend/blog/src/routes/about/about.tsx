@@ -1,18 +1,21 @@
-import React, {useEffect} from 'react'
+import React, { useEffect, useState } from 'react'
 import './about.css';
 import image2 from '../../assets/images/team2.jpg'
 import image3 from '../../assets/images/team3.jpg'
 import image1 from '../../assets/images/team1.jpg'
 const About = () => {
 
+    const [aboutUsData, setaboutUsData] = useState([]);
     useEffect(() => {
-        console.log("process env ",process.env)
+        console.log("process env ", process.env)
         fetch(process.env.REACT_APP_API_URL + 'blogging/items')
-        .then(res => res.json())
-        .then((res: any) => {
-            console.log("api respose", res)
-        })
+            .then(res => res.json())
+            .then((res: any) => {
+                console.log("api respose", res)
+                setaboutUsData(res)
+            })
     }, [])
+
 
     return (
         <React.Fragment>
@@ -22,51 +25,30 @@ const About = () => {
                 <p>Resize the browser window to see that this page is responsive by the way.</p>
             </div>
 
-            <h2 style={{"textAlign": "center"}}>Our Team</h2>
+            <h2 style={{ "textAlign": "center" }}>Our Team</h2>
+
             <div className="row">
-                <div className="column">
-                    <div className="card">
-                        <img src={image1} alt="Jane" style={{ width: "100%" }} />
-                        <div className="container">
-                            <h2>Jane Doe</h2>
-                            <p className="title">CEO & Founder</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>jane@example.com</p>
-                            <p><button className="button">Contact</button></p>
 
+                {aboutUsData.map((data: any, index) => {
+
+                    return (
+                        <div className="column" key={data.id}>
+                            <div className="card">
+                                <img src={require(`../../assets/images/${data.image}`).default} alt="Jane" style={{ width: "100%" }} />
+                                <div className="container">
+                                    <h2>{data.nam}</h2>
+                                    <p className="title">{data.title}</p>
+                                    <p>{data.description}</p>
+                                    <p>{data.email}</p>
+                                    <p><button className="button">Contact</button></p>
+
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div className="column">
-                    <div className="card">
-                        <img src={image2} alt="Mike" style={{ width: "100%" }} />
-                        <div className="container">
-                            <h2>Mike Ross</h2>
-                            <p className="title">Art Director</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>mike@example.com</p>
-                            <p><button className="button">Contact</button></p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="column">
-                    <div className="card">
-                        <img src={image3} alt="John" style={{ width: "100%" }} />
-                        <div className="container">
-                            <h2>John Doe</h2>
-                            <p className="title">Designer</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                            <p>john@example.com</p>
-                            <p><button className="button">Contact</button></p>
-                        </div>
-
-                    </div>
-                </div>
+                    )
+                })}
             </div>
-            </React.Fragment>
+        </React.Fragment>
     )
 }
 
